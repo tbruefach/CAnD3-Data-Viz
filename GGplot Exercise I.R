@@ -2,6 +2,7 @@
 
 
 # Loading Packages --------------------------------------------------------
+renv::restore()
 
 library(broom)
 library(tidyverse)
@@ -16,9 +17,6 @@ library(skimr)
 
 # Loading Data
 load('data.RData')
-
-  # Tabulating Regions
-mig %>% count(location)
 
   # Selecting only Canadian Provinces/Territories (not 'Canada')
 ex1_data <- ggplot(data = mig,
@@ -49,9 +47,6 @@ ggsave('Exercise_1.pdf', dpi = 1080)
 # Using the HDI data set, create a scatterplot for income per capita against 
 # life expectancy, where the y-axis reversed and the datapoints are colored 
 # according to the variable Status using the viridis color palette.
-
-  # Summarizing Life Expectancy and Income Per Capita
-hdi %>% skim(GNIpCap, LifeExp)
 
   # Filtering Data for Scatterplot
 ex2_data <- ggplot(data = hdi,
@@ -96,8 +91,6 @@ ex3_data <- hdi %>%
                        color = Country,
                        group = Country))
 
-RColorBrewer::display.brewer.all()
-
   # Plotting Data
 ex3_data +
   geom_line(size = 1) +
@@ -123,10 +116,6 @@ ggsave('Exercise_3.pdf', dpi = 1080)
 # Using the migration data set, create boxplots for each province/territory 
 # migration distribution facetting the years 1960, 1970, 1980, . . . , 2010.
 
-
-# Tabulating Regions
-mig %>% count(location)
-
 # Selecting Data from Each Decade
 ex4_data <- ggplot(data = mig %>% filter(year == seq(1960, 2010, 10)),
                    mapping = aes(y = persons,
@@ -150,9 +139,6 @@ ex4_data +
         plot.title = element_text(hjust = 0.5))
 
   # Saving Plot to PDF File
-ggsave('Exercise_4.pdf', dpi = 1080)
-
-
-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
+ggsave('Exercise_4.pdf', dpi = 1080, height = 7, width = 10)
 
 

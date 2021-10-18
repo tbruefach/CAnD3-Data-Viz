@@ -1,0 +1,23 @@
+---
+title: "Shell File: CAnD3 Data Visualization"
+author: "Tyler Bruefach"
+date: "10/18/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Reproducing the Provided Figures
+
+Knitting this shell file will reproduce and save the figures provided in 
+the repository. First, it will run the script named **"GGplot Exercise I.R"** to complete the following tasks:  
+  
+1. Load required packages for analyses and their versions at the time the 
+figures were produced (saved with renv).  
+2. Load and filter the required data.  
+3. Plot and save four figures.
+  
+```{r, code=xfun::read_utf8('GGplot Exercise I.R')}
+```
