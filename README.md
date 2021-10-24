@@ -1,5 +1,5 @@
 ## README File: CAnD3-Data-Viz
-###Exercises meant to engage our skills in data visualization using Rstudio.  
+### Exercises meant to engage our skills in data visualization using Rstudio.  
 
 ## Study Description
 This exercise is meant to showcase our abilities to visualize data using 
@@ -7,10 +7,7 @@ Rstudio. Included are 4 plots and the data/code required to reproduce them.
 
 ***
 
-## Data Description
-
-***
-
+## Data Description  
 ### Data Source Availabiliy Statement
 Data were provided to CAnD3 fellows by Dr. Tim Elrick. 3 primary datasets are 
 used, which measure COVID-19 in Canadian regions/provinces, migration in 
@@ -38,9 +35,7 @@ run (knit) the shell file ('Shell File.Rmd'). This file calls on the script
 
 ***
 
-## Computational Requirements
-
-***
+## Computational Requirements  
 
 ### Software Requirements
 The following software programs are required to reproduce these analyses:  
