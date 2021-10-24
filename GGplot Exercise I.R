@@ -130,7 +130,7 @@ ex4_data +
        y = 'Net Migration (Persons)',
        title = 'Net Migration by Province/Territory (1970-2010)',
        caption = 'Created for CAnD3 GGplot Exercises') +
-  theme(legend.position = 'bottom',
+  theme(legend.position = 'right',
         legend.title = element_blank(),
         legend.key   = element_rect(fill = 'white'),
         axis.text.x  = element_blank(),
@@ -139,6 +139,6 @@ ex4_data +
         plot.title = element_text(hjust = 0.5))
 
   # Saving Plot to PDF File
-ggsave('Exercise_4.pdf', dpi = 1080, height = 7, width = 10)
+ggsave('Exercise_4.pdf', dpi = 1080, height = 7, width = 12)
 
 
